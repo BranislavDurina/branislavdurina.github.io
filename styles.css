@@ -196,6 +196,171 @@ a {
   background: #f4f1f7;
 }
 
+.blog-band {
+  background: #fff;
+}
+
+.microfeed-layout {
+  display: grid;
+  gap: 20px;
+}
+
+.microfeed-list {
+  display: grid;
+  gap: 14px;
+}
+
+.microfeed-card {
+  padding: 20px;
+  border: 1px solid rgba(23, 26, 33, 0.12);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.microfeed-card time {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 0.88rem;
+  font-weight: 760;
+}
+
+.microfeed-card h3,
+.microfeed-detail h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.microfeed-open,
+.microfeed-back {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 760;
+  text-align: left;
+  cursor: pointer;
+}
+
+.microfeed-open:hover,
+.microfeed-back:hover {
+  color: var(--teal);
+}
+
+.microfeed-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.microfeed-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.microfeed-tag {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef6f4;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 760;
+}
+
+.microfeed-status {
+  margin: 0;
+  color: var(--muted);
+}
+
+.microfeed-error {
+  color: var(--wine);
+}
+
+.microfeed-article-panel {
+  padding: 22px;
+  border: 1px solid rgba(23, 26, 33, 0.12);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.microfeed-back {
+  margin-bottom: 18px;
+  color: var(--blue);
+  font-size: 0.95rem;
+}
+
+.microfeed-detail time {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-weight: 760;
+}
+
+.microfeed-content {
+  max-width: 72ch;
+  font-size: 1.05rem;
+  overflow-wrap: anywhere;
+}
+
+.microfeed-content img,
+.microfeed-content video,
+.microfeed-content iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+  border-radius: 8px;
+}
+
+.microfeed-content iframe {
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+}
+
+.microfeed-content a {
+  color: var(--blue);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.microfeed-content a:hover {
+  color: var(--teal);
+}
+
+.microfeed-content pre {
+  overflow-x: auto;
+  padding: 14px;
+  border-radius: 8px;
+  background: #171a21;
+  color: #f7f3eb;
+}
+
+.microfeed-content blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid var(--teal);
+  color: var(--muted);
+}
+
+.microfeed-content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.microfeed-content th,
+.microfeed-content td {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
 .section-heading h2,
 .contact-band h2 {
   margin: 0;
