@@ -519,6 +519,7 @@ a {
 @media (max-width: 620px) {
   .stack-grid,
   .cert-grid,
+  .project-grid,
   .certificate-media {
     grid-template-columns: 1fr;
   }
@@ -584,4 +585,122 @@ a {
 
 .company-card strong {
   color: #fff;
+}
+
+/* ── Projects ── */
+.project-band {
+  background: #f0f4ff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-content: start;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  border: 1px solid rgba(23, 26, 33, 0.12);
+  border-radius: 8px;
+  background: var(--surface);
+  transition: box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(19, 124, 120, 0.4);
+  box-shadow: 0 4px 24px rgba(19, 124, 120, 0.1);
+}
+
+.project-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.project-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-status.live {
+  background: #e6f6f4;
+  color: var(--teal);
+}
+
+.project-status.live::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.project-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+}
+
+.project-card h3 a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.project-card h3 a:hover {
+  color: var(--teal);
+}
+
+.project-card > p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.project-tags li {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #e8f0fe;
+  color: var(--blue);
+  font-size: 0.76rem;
+  font-weight: 760;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--blue);
+  font-weight: 760;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.project-link:hover {
+  color: var(--teal);
 }
