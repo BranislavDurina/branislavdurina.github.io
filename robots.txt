@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://durina.dev/sitemap.xml
+Sitemap: https://branislavdurina.github.io/sitemap.xml
