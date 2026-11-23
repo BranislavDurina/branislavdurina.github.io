@@ -636,6 +636,13 @@ a {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Neutral status pill (e.g. project count) */
+.project-status {
+  background: #eef1f6;
+  color: var(--muted);
 }
 
 .project-status.live {
@@ -703,4 +710,56 @@ a {
 
 .project-link:hover {
   color: var(--teal);
+}
+
+/* Project group sub-items */
+.project-group > p {
+  flex: 0 0 auto;
+  margin-bottom: 4px;
+}
+
+.subproject {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  margin-top: 14px;
+  border-top: 1px solid rgba(23, 26, 33, 0.1);
+}
+
+.subproject-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.subproject h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.subproject h4 a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.subproject h4 a:hover {
+  color: var(--teal);
+}
+
+.subproject > p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.subproject .project-tags {
+  margin-bottom: 12px;
+}
+
+/* The base .project-grid rule above overrides the earlier mobile query, so repeat it here */
+@media (max-width: 620px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
